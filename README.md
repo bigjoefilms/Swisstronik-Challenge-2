@@ -23,7 +23,7 @@ Smart Contract Address on Swisstronik testnet:
 - ["0x7e3E14389dE0ac6c0A14A27f98A96FafA4E381e3"](#contract-address) 
 
 Smart Contract Address on Mumbai testnet: 
-- ["0x7e3E14389dE0ac6c0A14A27f98A96FafA4E381e3"](#contract-address) 
+- ["0xFBD508Bc97F6abaCb1B70EE01414E3771A7dE78E"](#contract-address) 
 
 ```bash
 git clone https://github.com/your-username/swisstronik-dev-challenge-2.git

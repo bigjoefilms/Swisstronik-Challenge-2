@@ -3,7 +3,7 @@ const { ethers } = require("hardhat");
 const { encryptDataField, decryptNodeResponse } = require("@swisstronik/swisstronik.js");
 
 const sendShieldedQuery = async (provider, contractAddress, data) => {
-  const rpcUrl = "https://polygon-mumbai.g.alchemy.com/v2/your-api-key"; 
+  const rpcUrl = "https://polygon-mumbai.infura.io/v3/4458cf4d1689497b9a38b1d6bbf05e78"; 
   const [encryptedData, usedEncryptedKey] = await encryptDataField(rpcUrl, data);
   const response = await provider.call({
     to: contractAddress,
@@ -13,7 +13,7 @@ const sendShieldedQuery = async (provider, contractAddress, data) => {
 };
 
 async function main() {
-  const contractAddress = "0x7e3E14389dE0ac6c0A14A27f98A96FafA4E381e3"; 
+  const contractAddress = "0xFBD508Bc97F6abaCb1B70EE01414E3771A7dE78E"; 
   const [signer] = await ethers.getSigners();
   const contractFactory = await ethers.getContractFactory("SimpleStorage"); 
   const contract = contractFactory.attach(contractAddress);
