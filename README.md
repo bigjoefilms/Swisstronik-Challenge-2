@@ -20,7 +20,7 @@ npx hardhat run scripts/accessStorage.js
 ### Deployed Contract Addresses
 
 Smart Contract Address on Swisstronik testnet:
-- ["0x7e3E14389dE0ac6c0A14A27f98A96FafA4E381e3"](#contract-address) 
+- ["0x9D1c4a7E27A73a68e1Be355B65EB57A1a2f35BB4"](#contract-address) 
 
 Smart Contract Address on Mumbai testnet: 
 - ["0xFBD508Bc97F6abaCb1B70EE01414E3771A7dE78E"](#contract-address) 

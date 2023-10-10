@@ -8,7 +8,7 @@ module.exports = {
   defaultNetwork: "polygon_mumbai",
   networks: {
     hardhat: {},
-    swisstron: {
+    swisstronik: {
       url: API_URL_YOUR_SWISSTRONIK_RPC_URL,
       accounts: [process.env.YOUR_SWISSTRONIK_RPC_URL], 
     },

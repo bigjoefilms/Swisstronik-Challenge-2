@@ -1,14 +1,14 @@
-const { ethers } = require("hardhat");
+const hre = require("hardhat");
 const { encryptDataField, decryptNodeResponse } = require("@swisstronik/swisstronik.js");
 
-const sendShieldedQuery = async (provider, contractAddress, data) => {
- const rpcUrl = hre.network.config.url;
-  const [encryptedData, usedEncryptedKey] = await encryptDataField(rpcUrl, data);
+const sendShieldedQuery = async (provider, destination, data) => {
+  const rpclink = hre.network.config.url;
+  const [encryptedData, usedEncryptedKey] = await encryptDataField(rpclink, data);
   const response = await provider.call({
-    to: contractAddress,
+    to: destination,
     data: encryptedData,
   });
-  return await decryptNodeResponse(rpcUrl, response, usedEncryptedKey);
+  return await decryptNodeResponse(rpclink, response, usedEncryptedKey);
 };
 
 async function main() {
